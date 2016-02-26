@@ -1,0 +1,196 @@
+[Router]: Info: Start to listen on port 31254
+[Router]: Info: Client 127.0.0.1:51709 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Process started
+[Router]: Info: Client 127.0.0.1:51712 connected, with message ServiceProvideServer
+[Router]: Info: Client 127.0.0.1:51713 connected, with message ServerStarted
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: GameStudio mode started!
+[Router]: Info: Client 127.0.0.1:51882 connected, with message ClientRequestServer
+[Router]: Info: Client 127.0.0.1:51883 connected, with message ServerStarted
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:51882 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:51940 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:51941 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:51940 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:51983 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:51984 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:51983 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:53100 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:53101 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:53100 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:53185 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:53186 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:53185 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:53335 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:53336 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:53335 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:53422 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:53423 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:53422 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:53511 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:53512 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:53511 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:53533 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:53534 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:53533 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:53631 connected, with message ClientRequestServer
+[Router]: Info: Client 127.0.0.1:53632 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:53632 connected, with message ServerStarted
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:53631 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:53811 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:53812 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:53811 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:53914 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:53915 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:53914 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:54007 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:54008 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:54007 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:54102 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:54103 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:54102 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:54208 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:54209 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:54208 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:54437 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:54438 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:54437 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:54536 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:54537 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:54536 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:51709 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:54616 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: GameStudio mode started!
+[Router]: Info: Client 127.0.0.1:54617 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:55087 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:55088 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:55087 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:55112 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:55113 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:55112 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:55205 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:55206 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:55205 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:55301 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:55302 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:55301 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:55513 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:55514 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:55513 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:55889 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:55890 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:55889 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:56112 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:56113 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:56112 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:54616 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:56211 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: GameStudio mode started!
+[Router]: Info: Client 127.0.0.1:56212 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:56215 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:56216 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:56215 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:56352 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:56353 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:56352 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:56444 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:56445 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:56444 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:56540 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:56541 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:56540 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:56211 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:58511 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:58512 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:58511 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:58631 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:58632 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:58631 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:58726 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:58727 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:58726 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:58816 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:58817 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:58816 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:58918 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:58919 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:58918 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:59058 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:59059 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:59058 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:59166 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:59167 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:59166 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:59276 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:59277 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:59276 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:60643 connected, with message ClientRequestServer
+[Router]: Info: Client 127.0.0.1:60644 connected, with message ServerStarted
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: GameStudio mode started!
+[Router]: Info: Client 127.0.0.1:60674 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:60675 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:60674 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:60643 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:60763 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: GameStudio mode started!
+[Router]: Info: Client 127.0.0.1:60764 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:60771 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:60772 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:60771 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:60916 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:60917 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:60916 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:61053 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:61054 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:61053 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:61250 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:61251 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:61250 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:61366 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:61367 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:60763 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:61366 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.
+[Router]: Info: Client 127.0.0.1:61461 connected, with message ClientRequestServer
+[SiliconStudio.Xenko.EffectCompilerServer:1488]: Info: Client connected
+[Router]: Info: Client 127.0.0.1:61462 connected, with message ServerStarted
+[Router]: Info: Client 127.0.0.1:61461 disconnected with exception: Von der Übertragungsverbindung können keine Daten gelesen werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen.

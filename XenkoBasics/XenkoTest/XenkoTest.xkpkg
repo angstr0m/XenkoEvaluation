@@ -1,0 +1,44 @@
+!Package
+Id: 7ba1c872-401d-4db6-9de8-a3508fc8cbd8
+SerializedVersion: {Assets: 0.0.2}
+Tags: []
+Meta:
+    Name: XenkoTest
+    Version: 1.0.0.0
+    Authors: []
+    Owners: []
+    RootNamespace: XenkoTest
+    Dependencies:
+        -   Name: Xenko
+            Version: 1.5.3-beta
+            RootAssets: []
+LocalDependencies: []
+Profiles:
+    -   Name: Shared
+        Platform: Shared
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Shared
+            -   Path: XenkoTest.Game/Effects
+        OutputGroupDirectories: {}
+        Properties: {}
+        ProjectReferences:
+            -   Id: 5c24393c-69f9-4769-9f42-b339930ffe6b
+                Location: XenkoTest.Game/XenkoTest.Game.csproj
+                Type: Library
+    -   Name: Windows
+        Platform: Windows
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Windows
+        OutputGroupDirectories: {}
+        Properties: {}
+        ProjectReferences:
+            -   Id: 73935b3e-8ac3-4c1e-8ef3-70e4cdf9e580
+                Location: XenkoTest.Windows/XenkoTest.Windows.csproj
+                Type: Executable
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets:
+    - fde0e19a-f2ea-4148-af9c-943835b90248:Sphere
