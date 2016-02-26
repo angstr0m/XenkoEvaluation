@@ -5,11 +5,12 @@ Tags: []
 Hierarchy:
     ~Id: 11e60936-42df-4f42-bc8d-d015daf4ffa9
     RootEntities:
+        - 2aac1bae-2415-4647-a5ce-0fbd773afaca
+        - 92f7d9c5-c81e-4d49-91d4-8f32e4fe4499
         - cc480114-f117-45dd-87fd-c1641e6fd8f7
         - 90cde3bd-cf22-46a5-b5f0-143f1774f604
         - 755a9ef4-7d59-49be-8b8d-18fcfab3ce80
         - 00e532bb-78b8-4468-bb2e-1ffcfb0e522f
-        - 92f7d9c5-c81e-4d49-91d4-8f32e4fe4499
     Entities:
         -   Entity:
                 Id: 00e532bb-78b8-4468-bb2e-1ffcfb0e522f
@@ -31,6 +32,23 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: []
             Design: {}
+        -   Entity:
+                Id: 2aac1bae-2415-4647-a5ce-0fbd773afaca
+                Name: CubeSpawner
+                Components:
+                    ScriptComponent.Key:
+                        ~Id: 699d18fd-39eb-4148-9cba-0a4d3c4e4dde
+                        Scripts:
+                            - !XenkoTest.Tests.Test_CubeSpawner,XenkoTest.Game
+                                Id: c50347dd-306d-43d3-8404-c07a0da1d640
+                    TransformComponent.Key:
+                        ~Id: fa7aed42-27b7-435b-80f3-1f2a6a898e1c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {W: 1.0, X: 0.0, Y: 0.0, Z: 0.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: []
+            Design:
+                Folder: Spawners
         -   Entity:
                 Id: 755a9ef4-7d59-49be-8b8d-18fcfab3ce80
                 Name: Directional light
@@ -72,8 +90,8 @@ Hierarchy:
                         Projection: Perspective
                     TransformComponent.Key:
                         ~Id: 78a355d3-b2de-4839-8f89-32f1cbdf5df5
-                        Position: {X: -3.0858, Y: 2.770557, Z: 9.878288}
-                        Rotation: {W: 0.981060266, X: -0.08583164, Y: -0.1729874, Z: -0.0151344351}
+                        Position: {X: 0.0, Y: 20.0, Z: 20.0}
+                        Rotation: {W: 0.906307757, X: -0.42261827, Y: 0.0, Z: 0.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: []
             Design: {}
@@ -92,7 +110,8 @@ Hierarchy:
                         Rotation: {W: 1.0, X: 0.0, Y: 0.0, Z: 0.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: []
-            Design: {}
+            Design:
+                Folder: Spawners
         -   Entity:
                 Id: cc480114-f117-45dd-87fd-c1641e6fd8f7
                 Name: Ground

@@ -12,7 +12,7 @@ namespace XenkoTest.Tests
     {
         private Timer destroyTimer;
 
-        public int Lifetime = 4000;
+        public int Lifetime = 10000;
         
         public override async Task Execute()
         {

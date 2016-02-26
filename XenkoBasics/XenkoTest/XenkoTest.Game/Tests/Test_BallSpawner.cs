@@ -12,7 +12,7 @@ namespace XenkoTest
     public class Test_BallSpawner : SyncScript
     {
         private ConcurrentQueue<Entity> initializedBalls = new ConcurrentQueue<Entity>();
-        private int spawnIntervall = 10;
+        private int spawnIntervall = 1000;
         private float spawnRadiusXZ = 10;
         private Timer timer;
 
