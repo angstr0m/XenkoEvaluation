@@ -14,7 +14,7 @@ namespace XenkoTest.Tests
         private float cubeAdditionalOffsetY = 1;
         
         private float cubebaseOffsetY = -0.5f;
-        private int moveDelay = 5;
+        private int moveDelay = 1000;
 
         private Vector3 offestX = Vector3.UnitX;
 
@@ -49,6 +49,7 @@ namespace XenkoTest.Tests
             tasks.Clear();
 
             var moveTasks = new List<Task>();
+            var toggleTasks = new List<Task>();
 
             foreach (var cube in cubes)
             {
@@ -61,13 +62,16 @@ namespace XenkoTest.Tests
                 var delay = (int)(moveDelay * rand.NextDouble() * 0.1f);
                 var moveTask = MoveCubeToPositionWithDelay(cube, baseOffsetVector + tempOffsetY, delay);
 
-                await moveTask;
+                if (rand.NextDouble() < 0.1f)
+                {
+                    await moveTask;
+                }
             }
 
             while (Game.IsRunning)
             {
-                await Script.NextFrame();
                 moveTasks.Clear();
+                toggleTasks.Clear();
 
                 foreach (var cube in cubes)
                 {
@@ -79,7 +83,7 @@ namespace XenkoTest.Tests
 
                     var delay = (int) (moveDelay*rand.NextDouble());
                     var moveTask = MoveCubeToPositionWithDelay(cube, baseOffsetVector + tempOffsetY, delay);
-                    
+
                     moveTasks.Add(moveTask);
                 }
 
@@ -87,6 +91,35 @@ namespace XenkoTest.Tests
                 {
                     await moveTask;
                 }
+
+                //foreach (var cube in cubes)
+                //{
+                //    toggleTasks.Add(RandomCubeActive(cube));
+                //}
+
+                //foreach (var toggleTask in toggleTasks)
+                //{
+                //    await toggleTask;
+                //}
+            }
+        }
+        
+        private async Task RandomCubeActive(Entity cube)
+        {
+            await Task.Delay((int)(spawnDelay * rand.NextDouble()));
+            await Script.NextFrame();
+
+            var toggleActive = rand.NextDouble() >= 0.5f;
+            
+            if (toggleActive)
+            {
+                foreach (var physicsElement in cube.Get<PhysicsComponent>().Elements)
+                {
+                    physicsElement.RigidBody.Type = RigidBodyTypes.Kinematic;
+                    physicsElement.Collider.Enabled = !physicsElement.Collider.Enabled;
+                    physicsElement.RigidBody.Enabled = !physicsElement.RigidBody.Enabled;
+                }
+                cube.Get<ModelComponent>().Enabled = !cube.Get<ModelComponent>().Enabled;
             }
         }
 
@@ -121,7 +154,7 @@ namespace XenkoTest.Tests
 
             rigidbody.ColliderShapes.Add(colliderShape);
             rigidbody.IsKinematic = true;
-
+            
             ballPhysics.Elements.Add(rigidbody);
 
             return newBall;

@@ -7,7 +7,6 @@ Hierarchy:
     RootEntities:
         - 2aac1bae-2415-4647-a5ce-0fbd773afaca
         - 92f7d9c5-c81e-4d49-91d4-8f32e4fe4499
-        - cc480114-f117-45dd-87fd-c1641e6fd8f7
         - 90cde3bd-cf22-46a5-b5f0-143f1774f604
         - 755a9ef4-7d59-49be-8b8d-18fcfab3ce80
         - 00e532bb-78b8-4468-bb2e-1ffcfb0e522f
@@ -112,41 +111,6 @@ Hierarchy:
                         Children: []
             Design:
                 Folder: Spawners
-        -   Entity:
-                Id: cc480114-f117-45dd-87fd-c1641e6fd8f7
-                Name: Ground
-                Components:
-                    ModelComponent.Key:
-                        ~Id: b84f69b0-4481-47c8-a955-342521165e2b
-                        Model: 3e82632c-505a-4f76-b136-86393b4e5deb:Ground
-                        Materials:
-                            - null
-                    PhysicsComponent.Key:
-                        ~Id: a0aca273-6fda-42bf-bf8d-01e649c7836b
-                        Elements:
-                            - !StaticColliderElement
-                                ~Id: 41b5e2c5-4dd5-4e91-b3ad-6d2c85196de2
-                                CollisionGroup: AllFilter
-                                CanCollideWith: AllFilter
-                                ProcessCollisions: true
-                                Enabled: true
-                                CanSleep: false
-                                Restitution: 0.0
-                                Friction: 0.5
-                                RollingFriction: 0.0
-                                IsTrigger: false
-                                ColliderShapes:
-                                    - !StaticPlaneColliderShapeDesc
-                                        ~Id: 4dc6df51-3bce-425b-999b-f9c3dd24d3ab
-                                        Normal: {X: 0.0, Y: 1.0, Z: 0.0}
-                                        Offset: 0.0
-                    TransformComponent.Key:
-                        ~Id: 6fd7ead3-d5bd-4ff6-99b9-3275598944de
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {W: 1.0, X: 0.0, Y: 0.0, Z: 0.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: []
-            Design: {}
 SceneSettings:
     ~Id: e47d1c60-db2e-4e52-a3cc-6ff2c72e52ee
     GraphicsCompositor: !SceneGraphicsCompositorLayers
