@@ -6,7 +6,7 @@ namespace XenkoTest.Tests
 {
     public class Test_DestroyAfter : AsyncScript
     {
-        public int Lifetime = 10000;
+        public int Lifetime = 3000;
         private Timer destroyTimer;
 
         public override async Task Execute()

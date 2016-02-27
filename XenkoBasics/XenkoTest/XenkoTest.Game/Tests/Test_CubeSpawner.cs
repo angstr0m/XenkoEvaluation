@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using SiliconStudio.Core.Mathematics;
+using SiliconStudio.Core.MicroThreading;
 using SiliconStudio.Xenko.Engine;
 using SiliconStudio.Xenko.Physics;
 using SiliconStudio.Xenko.Rendering;
@@ -10,15 +11,15 @@ namespace XenkoTest.Tests
 {
     public class Test_CubeSpawner : AsyncScript
     {
-        private readonly int columnsZ = 30;
+        private readonly int columnsZ = 15;
         private readonly float cubeAdditionalOffsetY = 1;
         private readonly float cubebaseOffsetY = -0.5f;
         private readonly int moveDelay = 1000;
         private readonly Vector3 offestX = Vector3.UnitX;
-        private readonly Vector3 offsetPos = new Vector3(-15, 0, -15);
+        private readonly Vector3 offsetPos = new Vector3(-7.5f, 0, -7.5f);
         private readonly Vector3 offsetZ = Vector3.UnitZ;
         private readonly Random rand = new Random();
-        private readonly int rowsX = 30;
+        private readonly int rowsX = 15;
         private readonly int spawnDelay = 10000;
 
         public override async Task Execute()
@@ -27,7 +28,7 @@ namespace XenkoTest.Tests
             await InitializeCubePositions(cubes);
 
             var moveTasks = new List<Task>();
-            
+
 
             while (Game.IsRunning)
             {
@@ -56,27 +57,48 @@ namespace XenkoTest.Tests
             }
         }
 
-        private async Task ToggleCubesActiveAtRandom(List<Entity> cubes)
-        {
-            var toggleTasks = new List<Task>();
-
-            foreach (var cube in cubes)
-            {
-                toggleTasks.Add(ToggleCubeIsActiveAtRandom(cube));
-            }
-
-            foreach (var toggleTask in toggleTasks)
-            {
-                await toggleTask;
-            }
-        }
-
-        private async Task AddCubeToScene(Entity newCube)
+        private async Task AddCubeToSceneWithDelay(Entity newCube)
         {
             await Task.Delay((int) (spawnDelay*rand.NextDouble()));
             await Script.NextFrame();
 
             SceneSystem.SceneInstance.Scene.Entities.Add(newCube);
+        }
+
+        private async Task<Entity> AddOrRemoveCubeFromSceneAtRandom(Entity cube)
+        {
+            await Script.NextFrame();
+
+            var toggleActive = rand.NextDouble() >= 0.5f;
+
+            if (toggleActive && !SceneSystem.SceneInstance.Scene.Entities.Contains(cube))
+            {
+                await AddCubeToSceneWithDelay(cube);
+                return cube;
+            }
+            await RemoveCubeFromSceneWithDelay(cube);
+            return GetNewCube(cube.Transform.Position);
+        }
+
+        private Entity GetNewCube(Vector3 position)
+        {
+            var newBall = new Entity(position);
+
+            var ballModel = newBall.GetOrCreate<ModelComponent>();
+            ballModel.Model = Asset.Load<Model>("Cube");
+
+            var ballPhysics = newBall.GetOrCreate<PhysicsComponent>();
+            var rigidbody = new RigidbodyElement();
+
+            var colliderShape = new BoxColliderShapeDesc();
+            colliderShape.Size = Vector3.One;
+
+            rigidbody.ColliderShapes.Add(colliderShape);
+            rigidbody.IsKinematic = true;
+
+            ballPhysics.Elements.Add(rigidbody);
+
+            return newBall;
         }
 
         private async Task InitializeCubePositions(List<Entity> cubes)
@@ -107,44 +129,12 @@ namespace XenkoTest.Tests
             cube.Transform.Position = position;
         }
 
-        private async Task ToggleCubeIsActiveAtRandom(Entity cube)
+        private async Task RemoveCubeFromSceneWithDelay(Entity cube)
         {
             await Task.Delay((int) (spawnDelay*rand.NextDouble()));
             await Script.NextFrame();
 
-            var toggleActive = rand.NextDouble() >= 0.5f;
-
-            if (toggleActive)
-            {
-                foreach (var physicsElement in cube.Get<PhysicsComponent>().Elements)
-                {
-                    physicsElement.Collider.Enabled = !physicsElement.Collider.Enabled;
-                    physicsElement.RigidBody.Enabled = !physicsElement.RigidBody.Enabled;
-                    
-                }
-                cube.Get<ModelComponent>().Enabled = !cube.Get<ModelComponent>().Enabled;
-            }
-        }
-
-        private Entity GetNewCube(Vector3 position)
-        {
-            var newBall = new Entity(position);
-
-            var ballModel = newBall.GetOrCreate<ModelComponent>();
-            ballModel.Model = Asset.Load<Model>("Cube");
-
-            var ballPhysics = newBall.GetOrCreate<PhysicsComponent>();
-            var rigidbody = new RigidbodyElement();
-            
-            var colliderShape = new BoxColliderShapeDesc();
-            colliderShape.Size = Vector3.One;
-
-            rigidbody.ColliderShapes.Add(colliderShape);
-            rigidbody.IsKinematic = true;
-
-            ballPhysics.Elements.Add(rigidbody);
-
-            return newBall;
+            SceneSystem.SceneInstance.Scene.Entities.Remove(cube);
         }
 
         private async Task<List<Entity>> SpawnCubesInGrid()
@@ -159,7 +149,7 @@ namespace XenkoTest.Tests
                     var newCube = GetNewCube(offsetPos + offestX*i + offsetZ*j);
 
                     cubes.Add(newCube);
-                    tasks.Add(AddCubeToScene(newCube));
+                    tasks.Add(AddCubeToSceneWithDelay(newCube));
                 }
             }
 
@@ -169,6 +159,24 @@ namespace XenkoTest.Tests
             }
 
             return cubes;
+        }
+
+        private async Task ToggleCubesActiveAtRandom(List<Entity> cubes)
+        {
+            var cubeActivationTasks = new List<Task<Entity>>();
+
+            for (var i = 0; i < cubes.Count; i++)
+            {
+                var i1 = i;
+                var activationTask = AddOrRemoveCubeFromSceneAtRandom(cubes[i1]);
+
+                cubeActivationTasks.Add(activationTask);
+            }
+
+            for (int i = 0; i < cubeActivationTasks.Count; i++)
+            {
+                cubes[i] = await cubeActivationTasks[i];
+            }
         }
     }
 }
