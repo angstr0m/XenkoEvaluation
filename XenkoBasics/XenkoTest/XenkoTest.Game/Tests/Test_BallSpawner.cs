@@ -11,9 +11,9 @@ namespace XenkoTest
 {
     public class Test_BallSpawner : SyncScript
     {
-        private ConcurrentQueue<Entity> initializedBalls = new ConcurrentQueue<Entity>();
-        private int spawnIntervall = 1000;
-        private float spawnRadiusXZ = 10;
+        private readonly ConcurrentQueue<Entity> initializedBalls = new ConcurrentQueue<Entity>();
+        private readonly int spawnIntervall = 1000;
+        private readonly float spawnRadiusXZ = 10;
         private Timer timer;
 
         public override void Start()
@@ -34,7 +34,7 @@ namespace XenkoTest
 
                     SceneSystem.SceneInstance.Scene.Entities.Add(newBallFromQueue);
 
-                    newBallFromQueue.GetOrCreate<PhysicsComponent>()[0].RigidBody.ApplyImpulse(10.0f * Vector3.UnitY);
+                    newBallFromQueue.GetOrCreate<PhysicsComponent>()[0].RigidBody.ApplyImpulse(10.0f*Vector3.UnitY);
                 }
             }
         }
